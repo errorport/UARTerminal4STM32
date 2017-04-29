@@ -11,7 +11,6 @@
 #include "UARTerminal.h"
 
 UART_HandleTypeDef uartHandle;
-uint8_t linebreakch = (uint8_t)0x0A;
 
 HAL_StatusTypeDef InitUARTerminal()
 {
@@ -87,11 +86,6 @@ HAL_StatusTypeDef printu(char * ch)
     return HAL_UART_Transmit(&uartHandle, (uint8_t *)ch, 1, 0xFFFF);
 }
 
-HAL_StatusTypeDef printuln(char * ch)
-{
-            HAL_UART_Transmit(&uartHandle, (uint8_t *)ch, 1, 0xFFFF);
-    return  HAL_UART_Transmit(&uartHandle, &linebreakch, 1, 0xFFFF);
-}
 
 void setUARTerminal(UART_HandleTypeDef * uh)
 {

@@ -50,6 +50,5 @@ void setUARTerminal(UART_HandleTypeDef *);
 
 extern UART_HandleTypeDef uartHandle;
 
-uint8_t             linebreakch;
 
 #endif /* __UARTERMINAL_H */
