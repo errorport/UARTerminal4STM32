@@ -1,4 +1,4 @@
-#[UARTerminal for STM32](https://github.com/errorport/UARTerminal4STM32)
+# [UARTerminal for STM32](https://github.com/errorport/UARTerminal4STM32)
 ___
 
 Description: _Fast printf-like output with STM32 MCUs over UART-STLINK-USB._
@@ -13,14 +13,14 @@ Revision: 0.1
 ___
 
 
-##Get started!
+## Get started!
 
 The project is for beginners who are looking for a fast and easy-to-implement, arduino-like console. It works with only a 3-step configuration.
 The first revision is tested with two boards and worked well. (See the supported boards below.)
 I will expand the list of these boards, but feel free to write configuration files for them if You want. 
 
 
-##How to use it?
+## How to use it?
 
 _I know that this is the first think what you want to get. See the detailed bullsh*t after the example._
 
@@ -73,11 +73,11 @@ You should check it with:
 ls /dev/st* | grep "_console"
 ```
 
-##In the future
+## In the future
 
 I want to expand the supported boards' list and making a command reciever module under this one.
 
-##Contact
+## Contact
 
 Feel free to write me on the following e-mail address, if You have any question.
 [becsegergely@gmail.com](mailto:becsegergely@gmail.com)
