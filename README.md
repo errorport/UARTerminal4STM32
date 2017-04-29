@@ -15,7 +15,7 @@ ___
 
 ## Get started!
 
-The project is for beginners who are looking for a fast and easy-to-implement, arduino-like console. It works with only a 3-step configuration.
+The project is for beginners who are looking for a fast and easy-to-implement, arduino-like console. It works with only a 4-step configuration.
 The first revision is tested with two boards and worked well. (See the supported boards below.)
 I will expand the list of these boards, but feel free to write configuration files for them if You want. 
 
