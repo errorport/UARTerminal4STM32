@@ -59,12 +59,12 @@ __4. - set up the connection [UBUNTU]__
 I've used the following way on Ubuntu 17.04
 
 ```sh
-picocom -d 9 -p o -b [your selected baud rate that lies in UARTerminal.h] /dev/ttyACM0
+picocom -d 8 -p o -b [your selected baud rate that lies in UARTerminal.h] /dev/ttyACM0
 ```
 OR
 
 ```sh
-picocom -d 9 -p o -b [your selected baud rate that lies in UARTerminal.h] /dev/stlinkv2_console
+picocom -d 8 -p o -b [your selected baud rate that lies in UARTerminal.h] /dev/stlinkv2_console
 
 ```
 In the second one the device name under _/dev_ folder depends on the version of your board's STLINK.  
@@ -87,4 +87,3 @@ I want to expand the supported boards' list and making a command reciever module
 Feel free to write me on the following e-mail address, if You have any question.
 [becsegergely@gmail.com](mailto:becsegergely@gmail.com)
 
-http://
