@@ -20,7 +20,7 @@
     In case of You are using boards other than STM32L0xx,
     than uncomment the needed include.
 */
-#include "l072czy.h"
+#include "f746g.h"
 
 /*  MCU specific values
     You have to check these values by the documentation of

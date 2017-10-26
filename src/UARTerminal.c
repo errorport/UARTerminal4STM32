@@ -66,14 +66,14 @@ void InitGPIO()
   GPIOinit.Speed        =     GPIO_SPEED_FREQ_VERY_HIGH;
 
   /*  Setting up TX pin.
-      UART transciver pin.
+      UART transceiver pin.
   */
   GPIOinit.Alternate    =     UART_TX_AF;
   GPIOinit.Pin          =     UART_TX_PIN;
   HAL_GPIO_Init(UART_TX_GPIO_PORT, &GPIOinit);
 
   /*  Setting up RX pin.
-      UART reciever pin.
+      UART receiver pin.
   */
   GPIOinit.Alternate    =     UART_RX_AF;
   GPIOinit.Pin          =     UART_RX_PIN;
@@ -95,6 +95,6 @@ void setUARTerminal(UART_HandleTypeDef * uh)
 PUTCHAR_PROTOTYPE
 {
 	printu(&ch);
-  return ch;
+	return ch;
 }
 
