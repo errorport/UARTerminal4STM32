@@ -99,6 +99,8 @@ comment out the conflicting representations.
 ###L0:
 - B-L072Z-LRWAN1
 - Nucleo-64 STM32L053
+
+
 ###F7:
 - Discovery STM32F769I-DISC1 // __io_putchar(int ch) confrontation!
 
