@@ -72,11 +72,35 @@ You should check it with:
 ```sh
 ls /dev/st* | grep "_console"
 ```
+__5. - set up the connection [ARCH]__
+
+
+```sh
+picocom /dev/stlinkv2_console -d 7 -b [your selected baud rate that lies in UARTerminal.h] --parity o 1
+```
+OR
+```sh
+minicom -b9600 -8 -D /dev/stlinkv2_console
+```
+
+The device name under _/dev_ folder depends on the version of your board's STLINK.  
+You should check it with:
+```sh
+ls /dev/st* | grep "_console"
+```
+
 
 ## Supported boards
 
+In some cases, there are other representations of __io_putchar(int ch) 
+in HAL drivers. If the compiler notices the conflict, You have to 
+comment out the conflicting representations.
+
+###L0:
 - B-L072Z-LRWAN1
 - Nucleo-64 STM32L053
+###F7:
+- Discovery STM32F769I-DISC1 // __io_putchar(int ch) confrontation!
 
 ## In the future
 
