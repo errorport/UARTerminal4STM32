@@ -76,7 +76,7 @@ __5. - set up the connection [ARCH]__
 
 
 ```sh
-picocom /dev/stlinkv2_console -d 7 -b [your selected baud rate that lies in UARTerminal.h] --parity o 1
+picocom /dev/stlinkv2_console -d 8 -b [your selected baud rate that lies in UARTerminal.h] --parity o 1
 ```
 OR
 ```sh
